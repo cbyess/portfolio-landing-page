@@ -1,0 +1,155 @@
+html {
+  
+}
+
+body {
+  color: white;
+  font-family: sans-serif;
+  line-height: 0.7;
+  margin: 0 0 0 0;
+  
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0 0 10px 0;
+  line-height: 3rem;
+  text-align: center;
+}
+
+p {
+  font-size: 2.1rem;
+  font-style: italic;
+  color: #800040;
+  
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #008080;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  background-color: #800040;
+  width: 100%;
+}
+
+.navbutton {
+  
+  width: 110px;
+  height: 70px;
+  background-color: #800040;
+  font-size: 26px;
+  color: white;
+  border: none;
+}
+
+header {
+  padding: 0px 3rem;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #202020;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0rem; 
+  background-color: #008080;
+  width: 100%;
+  align-items: center;
+
+}
+
+.projects-header {
+  
+  border-bottom: 3px solid;
+  border-color: white;
+  margin-bottom: 100px;
+}
+
+
+img {
+  height: 400px;
+  max-width: 450px;
+  box-shadow: 1px 1px 2px black;
+  border-radius: 2px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 4rem;
+  max-width: 1500px;
+  justify-self: center;
+}
+
+.project-tile {
+  max-width: 100%;
+  height: 80px;
+  background-color: #1d5361;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px black;
+  border-radius: 2px;
+  font-size: 26px;
+  text-align: center;
+  line-height: 75px;
+}
+
+button:hover {
+  background-color: #008080;
+}
+
+@media (max-width: 1500px) { .project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 4rem;
+  }
+}
+
+@media (max-width: 1000px) { .project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 4rem;
+  }
+}
+
+@media (max-width: 1000px) { body {
+  line-height: 1;
+  }
+
+
+
+@media (max-width: 400px) { img {
+  width:100%;
+  }
+}
+
+@media (max-width: 400px) { .project-tile {
+  width:100%;
+  }
+}
